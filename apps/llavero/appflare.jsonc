@@ -14,8 +14,8 @@
   ],
   "maintainers": ["gmackie"],
   "source": {
-    "ref": "v0.1.0",
-    "sha": "582d0908ea7663cdb5a59fbdf3e7ef99c932de9b"
+    "ref": "v0.1.1",
+    "sha": "e3ebe6281561c4ade8ea1b63021c9b3b3a69f498"
   },
   "install": {
     "packageManager": "npm",
@@ -50,7 +50,7 @@
   "postInstall": [
     {
       "type": "markdown",
-      "content": "Visit /setup through Cloudflare Access and claim using your saved one-time code. [Operator and recovery guide](https://github.com/gmackie/llavero-deploy/tree/v0.1.0)."
+      "content": "Visit /setup through Cloudflare Access and claim using your saved one-time code. [Operator and recovery guide](https://github.com/gmackie/llavero-deploy/tree/v0.1.1)."
     }
   ],
   "requires": ["access"],
