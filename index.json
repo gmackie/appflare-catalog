@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-11-23T20:15:43.494Z",
+  "apps": [
+    {
+      "slug": "nathan-idp",
+      "repo": "gmackie/nathan",
+      "name": "Nathan identity provider",
+      "summary": "Experimental self-hosted Nathan identity provider with Better Auth, D1, a SCIM Durable Object and owner-controlled enrollment.",
+      "tagline": "Run an identity provider in your Cloudflare account",
+      "addedAt": "2026-11-23T15:09:30-05:00",
+      "version": "0.0.0-20261123.45220e2",
+      "artifacts": {
+        "zip": "https://github.com/gmackie/appflare-catalog/releases/download/nathan-idp@0.0.0-20261123.45220e2/nathan-idp-0.0.0-20261123.45220e2.zip",
+        "manifest": "https://github.com/gmackie/appflare-catalog/releases/download/nathan-idp@0.0.0-20261123.45220e2/manifest.json",
+        "sig": "https://github.com/gmackie/appflare-catalog/releases/download/nathan-idp@0.0.0-20261123.45220e2/manifest.sig",
+        "digest": "76e0a2243628320d14198805776d5ecfadb8f2207a2721aca8fd25c74a1df93b"
+      },
+      "tier": "artifact",
+      "plan": "paid",
+      "requires": [],
+      "lastVerified": null,
+      "authors": [
+        {
+          "name": "gmackie",
+          "github": "gmackie"
+        }
+      ],
+      "maintainers": [
+        "gmackie"
+      ],
+      "services": [
+        "d1",
+        "durable-objects"
+      ],
+      "categories": [
+        "security"
+      ],
+      "license": "MIT",
+      "revision": 1,
+      "accessOffer": "offered"
+    }
+  ],
+  "featured": [],
+  "stats": "https://gmackie.github.io/appflare-catalog/stats.json"
+}
