@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T20:15:43.494Z",
+  "generatedAt": "2026-11-23T20:28:41.505Z",
   "apps": [
     {
       "slug": "nathan-idp",
@@ -34,6 +34,44 @@
       ],
       "categories": [
         "security"
+      ],
+      "license": "MIT",
+      "revision": 1,
+      "accessOffer": "offered"
+    },
+    {
+      "slug": "worker-crm",
+      "repo": "gmackie/worker-crm",
+      "name": "Worker CRM",
+      "summary": "A single-workspace CRM for people, companies, opportunities, activities and tasks, with D1 storage and a Twenty-compatible REST API.",
+      "tagline": "Run a CRM in your Cloudflare account",
+      "addedAt": "2026-11-23T15:25:21-05:00",
+      "version": "0.1.0",
+      "artifacts": {
+        "zip": "https://github.com/gmackie/appflare-catalog/releases/download/worker-crm@0.1.0/worker-crm-0.1.0.zip",
+        "manifest": "https://github.com/gmackie/appflare-catalog/releases/download/worker-crm@0.1.0/manifest.json",
+        "sig": "https://github.com/gmackie/appflare-catalog/releases/download/worker-crm@0.1.0/manifest.sig",
+        "digest": "c3ce42ef6770dab19720324581a9b1c49c99c82949fc6f4d4e238d181dff9dea"
+      },
+      "tier": "artifact",
+      "plan": "free",
+      "requires": [],
+      "lastVerified": null,
+      "authors": [
+        {
+          "name": "gmackie",
+          "github": "gmackie"
+        }
+      ],
+      "maintainers": [
+        "gmackie"
+      ],
+      "services": [
+        "d1"
+      ],
+      "categories": [
+        "business",
+        "productivity"
       ],
       "license": "MIT",
       "revision": 1,
