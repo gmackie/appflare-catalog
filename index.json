@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T20:42:53.291Z",
+  "generatedAt": "2026-11-23T21:00:56.533Z",
   "apps": [
     {
       "slug": "attest-verifier",
@@ -46,12 +46,12 @@
       "summary": "A credential vault with owner claims, Cloudflare Access and encrypted per-organization storage. Prepare and verify your recovery kit locally before installing.",
       "tagline": "Run an owner-controlled credential vault",
       "addedAt": "2026-11-23T15:38:41-05:00",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "artifacts": {
-        "zip": "https://github.com/gmackie/appflare-catalog/releases/download/llavero@0.1.0/llavero-0.1.0.zip",
-        "manifest": "https://github.com/gmackie/appflare-catalog/releases/download/llavero@0.1.0/manifest.json",
-        "sig": "https://github.com/gmackie/appflare-catalog/releases/download/llavero@0.1.0/manifest.sig",
-        "digest": "af5125cb7dcd07a88603cf067f08229121c0f35f2436ddbc45c5a761b61f78de"
+        "zip": "https://github.com/gmackie/appflare-catalog/releases/download/llavero@0.1.1/llavero-0.1.1.zip",
+        "manifest": "https://github.com/gmackie/appflare-catalog/releases/download/llavero@0.1.1/manifest.json",
+        "sig": "https://github.com/gmackie/appflare-catalog/releases/download/llavero@0.1.1/manifest.sig",
+        "digest": "20785dc38f5f8514a33f3f07b4037f3f59a5213c9af085dd755ac584e48d3ae3"
       },
       "tier": "artifact",
       "plan": "paid",
