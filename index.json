@@ -1,6 +1,87 @@
 {
-  "generatedAt": "2026-11-23T20:28:41.505Z",
+  "generatedAt": "2026-11-23T20:42:53.291Z",
   "apps": [
+    {
+      "slug": "attest-verifier",
+      "repo": "gmackie/attest",
+      "name": "Attest verifier",
+      "summary": "Verify signed presentations in your Cloudflare account.",
+      "tagline": "Verify signed presentations in your Cloudflare account",
+      "addedAt": "2026-11-23T15:38:41-05:00",
+      "version": "0.0.0-20261123.5de9ae7",
+      "artifacts": {
+        "zip": "https://github.com/gmackie/appflare-catalog/releases/download/attest-verifier@0.0.0-20261123.5de9ae7/attest-verifier-0.0.0-20261123.5de9ae7.zip",
+        "manifest": "https://github.com/gmackie/appflare-catalog/releases/download/attest-verifier@0.0.0-20261123.5de9ae7/manifest.json",
+        "sig": "https://github.com/gmackie/appflare-catalog/releases/download/attest-verifier@0.0.0-20261123.5de9ae7/manifest.sig",
+        "digest": "d8ee51e0de784be8aca45824679593472b7db2e6a05143f453d1d6e88280f3a3"
+      },
+      "tier": "artifact",
+      "plan": "paid",
+      "requires": [],
+      "lastVerified": null,
+      "authors": [
+        {
+          "name": "gmackie",
+          "github": "gmackie"
+        }
+      ],
+      "maintainers": [
+        "gmackie"
+      ],
+      "services": [
+        "durable-objects"
+      ],
+      "categories": [
+        "security"
+      ],
+      "license": "GPL-3.0-only",
+      "licenseNote": "Combined Worker under GPL-3.0-only. Original Attest verifier code under Apache-2.0. Corresponding source accompanies each release.",
+      "revision": 1,
+      "accessOffer": "offered"
+    },
+    {
+      "slug": "llavero",
+      "repo": "gmackie/llavero-deploy",
+      "name": "Llavero",
+      "summary": "A credential vault with owner claims, Cloudflare Access and encrypted per-organization storage. Prepare and verify your recovery kit locally before installing.",
+      "tagline": "Run an owner-controlled credential vault",
+      "addedAt": "2026-11-23T15:38:41-05:00",
+      "version": "0.1.0",
+      "artifacts": {
+        "zip": "https://github.com/gmackie/appflare-catalog/releases/download/llavero@0.1.0/llavero-0.1.0.zip",
+        "manifest": "https://github.com/gmackie/appflare-catalog/releases/download/llavero@0.1.0/manifest.json",
+        "sig": "https://github.com/gmackie/appflare-catalog/releases/download/llavero@0.1.0/manifest.sig",
+        "digest": "af5125cb7dcd07a88603cf067f08229121c0f35f2436ddbc45c5a761b61f78de"
+      },
+      "tier": "artifact",
+      "plan": "paid",
+      "requires": [
+        "access"
+      ],
+      "lastVerified": null,
+      "authors": [
+        {
+          "name": "gmackie",
+          "github": "gmackie"
+        }
+      ],
+      "maintainers": [
+        "gmackie"
+      ],
+      "services": [
+        "d1",
+        "durable-objects",
+        "cron",
+        "access"
+      ],
+      "categories": [
+        "passwords",
+        "security"
+      ],
+      "license": "Apache-2.0",
+      "revision": 1,
+      "accessOffer": "required"
+    },
     {
       "slug": "nathan-idp",
       "repo": "gmackie/nathan",
