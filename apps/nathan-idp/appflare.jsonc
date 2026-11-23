@@ -1,0 +1,99 @@
+{
+  "slug": "nathan-idp",
+  "name": "Nathan identity provider",
+  "summary": "Experimental self-hosted Nathan identity provider with Better Auth, D1, a SCIM Durable Object and owner-controlled enrollment.",
+  "tagline": "Run an identity provider in your Cloudflare account",
+  "repo": "gmackie/nathan",
+  "license": "MIT",
+  "categories": [
+    "security"
+  ],
+  "authors": [
+    {
+      "name": "gmackie",
+      "github": "gmackie"
+    }
+  ],
+  "maintainers": [
+    "gmackie"
+  ],
+  "source": {
+    "ref": "appflare-owner-promotion",
+    "sha": "45220e2caccaa311fad5e4ea98d557c5311428b3"
+  },
+  "install": {
+    "packageManager": "npm",
+    "wranglerConfig": "wrangler.auth.jsonc",
+    "health": {
+      "path": "/healthz"
+    }
+  },
+  "plan": "paid",
+  "secrets": [
+    {
+      "name": "BETTER_AUTH_SECRET",
+      "label": "Session secret",
+      "generate": "password"
+    },
+    {
+      "name": "NATHAN_CONFIG_KEY",
+      "label": "Configuration encryption key",
+      "help": "Generate exactly 32 bytes as unpadded base64url and save securely. For example: node -e \"console.log(require('node:crypto').randomBytes(32).toString('base64url'))\"."
+    },
+    {
+      "name": "GOOGLE_CLIENT_SECRET",
+      "label": "Google OAuth client secret"
+    }
+  ],
+  "$schema": "https://appflare.github.io/catalog/schema/v1.json",
+  "vars": [
+    {
+      "name": "NATHAN_ISSUER",
+      "label": "Issuer origin",
+      "default": "{{appUrl}}"
+    },
+    {
+      "name": "NATHAN_ADMIN_EMAILS",
+      "label": "Verified first administrator email",
+      "help": "Enter one email address that the operator controls through the configured Google identity provider."
+    },
+    {
+      "name": "CLOUDFLARE_ACCOUNT_ID",
+      "label": "Installation Cloudflare account ID",
+      "default": "{{accountId}}",
+      "seedOnly": true
+    },
+    {
+      "name": "GOOGLE_CLIENT_ID",
+      "label": "Google OAuth client ID",
+      "help": "Register the exact callback at your issuer origin followed by /api/auth/callback/google."
+    }
+  ],
+  "resources": {
+    "d1": {
+      "DB": {
+        "seed": {
+          "statements": [
+            {
+              "sql": "INSERT OR IGNORE INTO nathan_bootstrap_status (id, cloudflare_user_id, admin_email, state) VALUES ('primary', 'cli:' || ?, lower(trim(?)), 'pending')",
+              "params": [
+                {
+                  "var": "CLOUDFLARE_ACCOUNT_ID"
+                },
+                {
+                  "var": "NATHAN_ADMIN_EMAILS"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "postInstall": [
+    {
+      "type": "markdown",
+      "content": "Complete verified operator enrollment using the [Nathan installation guide](https://github.com/gmackie/appflare-catalog/blob/main/apps/nathan-idp/README.md). Sign in on the final issuer hostname before enrolling any passkey."
+    }
+  ]
+}
