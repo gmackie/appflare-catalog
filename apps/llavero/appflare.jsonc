@@ -1,0 +1,93 @@
+{
+  "slug": "llavero",
+  "name": "Llavero",
+  "summary": "A credential vault with owner claims, Cloudflare Access and encrypted per-organization storage. Prepare and verify your recovery kit locally before installing.",
+  "tagline": "Run an owner-controlled credential vault",
+  "repo": "gmackie/llavero-deploy",
+  "license": "Apache-2.0",
+  "categories": ["passwords", "security"],
+  "authors": [
+    {
+      "name": "gmackie",
+      "github": "gmackie"
+    }
+  ],
+  "maintainers": ["gmackie"],
+  "source": {
+    "ref": "v0.1.0",
+    "sha": "582d0908ea7663cdb5a59fbdf3e7ef99c932de9b"
+  },
+  "install": {
+    "packageManager": "npm",
+    "wranglerConfig": "wrangler.jsonc",
+    "health": {
+      "path": "/api/health/ready"
+    }
+  },
+  "plan": "paid",
+  "secrets": [
+    {
+      "name": "AUTH_SECRET",
+      "label": "Session signing secret",
+      "generate": "password"
+    },
+    {
+      "name": "LLAVERO_ROOT_KEY",
+      "label": "Verified recovery-kit key",
+      "help": "Run the release\u2019s prepare.mjs locally before pasting this value."
+    },
+    {
+      "name": "LLAVERO_SETUP_CODE_SHA256",
+      "label": "One-time owner claim digest",
+      "help": "Use the digest supplied by prepare.mjs. Save the original code in your password manager."
+    },
+    {
+      "name": "AUTH_GITHUB_SECRET",
+      "label": "GitHub OAuth client secret"
+    }
+  ],
+  "$schema": "https://appflare.github.io/catalog/schema/v1.json",
+  "postInstall": [
+    {
+      "type": "markdown",
+      "content": "Visit /setup through Cloudflare Access and claim using your saved one-time code. [Operator and recovery guide](https://github.com/gmackie/llavero-deploy/tree/v0.1.0)."
+    }
+  ],
+  "requires": ["access"],
+  "access": {
+    "mode": "required"
+  },
+  "vars": [
+    {
+      "name": "APP_URL",
+      "label": "Installation origin",
+      "default": "{{appUrl}}"
+    },
+    {
+      "name": "ALLOWED_ORIGINS",
+      "label": "Allowed browser origin",
+      "default": "{{appUrl}}"
+    },
+    {
+      "name": "LLAVERO_ACCESS_TEAM_DOMAIN",
+      "label": "Access team domain",
+      "default": "{{accessTeamDomain}}"
+    },
+    {
+      "name": "LLAVERO_ACCESS_AUD",
+      "label": "Access audience",
+      "default": "{{accessAud}}"
+    },
+    {
+      "name": "LLAVERO_OWNER_EMAILS",
+      "label": "Owner emails (comma-separated)"
+    },
+    {
+      "name": "AUTH_GITHUB_ID",
+      "label": "GitHub OAuth client ID"
+    }
+  ],
+  "bump": {
+    "autoMerge": false
+  }
+}

@@ -1,7 +1,8 @@
 import { existsSync, readdirSync, rmSync, statSync } from "node:fs";
 import path from "node:path";
 
-const ARTIFACT_FILE = /^(?:manifest\.json|manifest\.sig|[^/]+\.zip)$/;
+const ARTIFACT_FILE =
+  /^(?:manifest\.json|manifest\.sig|attest-verifier-source\.tar\.gz|[^/]+\.zip)$/;
 
 /**
  * Empties a previous artifact directory so a stale zip or `manifest.sig` from an

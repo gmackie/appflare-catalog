@@ -1,0 +1,290 @@
+{
+  "@noble/curves@1.9.1": {
+    "name": "@noble/curves",
+    "version": "1.9.1",
+    "tarball": "https://registry.npmjs.org/@noble/curves/-/curves-1.9.1.tgz",
+    "integrity": "sha512-k11yZxZg+t+gWvBbIswW0yoJlu8cHOC7dhunwOzoWH/mXGBiYyR4YY6hAEK/3EUs4UpB8la1RfdRpeGsFHkWsA==",
+    "license": "MIT",
+    "repository": "paulmillr/noble-curves",
+    "commit": "ede19f4a6bbdd8d4df7933695fb5bed6e24a4930"
+  },
+  "@noble/curves@2.4.0": {
+    "name": "@noble/curves",
+    "version": "2.4.0",
+    "tarball": "https://registry.npmjs.org/@noble/curves/-/curves-2.4.0.tgz",
+    "integrity": "sha512-P4/62zrgfH33CneE3Dn4WhJVA22YUU0eR51wKIan4NVRvwsA0YnPTwWGpNbpuacSujmSFLvyzpyuR30+fbq2Ew==",
+    "license": "MIT",
+    "repository": "paulmillr/noble-curves",
+    "commit": "656c4364dffa44c64aa0c49914b8000b278b67a9"
+  },
+  "@noble/hashes@1.8.0": {
+    "name": "@noble/hashes",
+    "version": "1.8.0",
+    "tarball": "https://registry.npmjs.org/@noble/hashes/-/hashes-1.8.0.tgz",
+    "integrity": "sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==",
+    "license": "MIT",
+    "repository": "paulmillr/noble-hashes",
+    "commit": "32f700f38ec49d7e6b2ab687904d6b2d7d60d80a"
+  },
+  "@noble/hashes@2.4.0": {
+    "name": "@noble/hashes",
+    "version": "2.4.0",
+    "tarball": "https://registry.npmjs.org/@noble/hashes/-/hashes-2.4.0.tgz",
+    "integrity": "sha512-X5XaVWZIBCT7HHZGm5I7ZQXDwLG+bGXuSrMQAW+7Zvl87h1kmc1ZB1VSRJcpUfoUrGQp4Fkoxm5kZ+Ms+aW+eA==",
+    "license": "MIT",
+    "repository": "paulmillr/noble-hashes",
+    "commit": "663c2aeeffc308ac0cded59bd32f7c212adacfc2"
+  },
+  "@pcd/gpc@0.4.1": {
+    "name": "@pcd/gpc",
+    "version": "0.4.1",
+    "tarball": "https://registry.npmjs.org/@pcd/gpc/-/gpc-0.4.1.tgz",
+    "integrity": "sha512-ltdoAe3+umiKoqVoiLL2lAvXD9svbVXkCczv9qDg6qd9M9GUzzSKDImeBfDUZHhotekg8g5acOCDbREBrqZg6A==",
+    "license": "GPL-3.0-or-later",
+    "repository": "proofcarryingdata/zupass",
+    "commit": "f6be34c71d4629892b36c8af3465a50293bcfdcd"
+  },
+  "@pcd/gpcircuits@0.5.1": {
+    "name": "@pcd/gpcircuits",
+    "version": "0.5.1",
+    "tarball": "https://registry.npmjs.org/@pcd/gpcircuits/-/gpcircuits-0.5.1.tgz",
+    "integrity": "sha512-IWPDs+73vHaBePZjcP+8DR4GOD0qOtGKBPpa3O6Z6xgdqyrD5EmFWa+rIkL+h+U+7mjGwt8Fn4AgqOZpC3rAlg==",
+    "license": "GPL-3.0-or-later",
+    "repository": "proofcarryingdata/zupass",
+    "commit": "f6be34c71d4629892b36c8af3465a50293bcfdcd"
+  },
+  "@pcd/pod@0.5.1": {
+    "name": "@pcd/pod",
+    "version": "0.5.1",
+    "tarball": "https://registry.npmjs.org/@pcd/pod/-/pod-0.5.1.tgz",
+    "integrity": "sha512-5wpb2R09Oyexn6QrgBpW92Qm+sXS+Wfl7/znC4niOtn0UGI/8azh8xatMZ8PqkLgevAqRvHFvZMSMw9Nv+IM9g==",
+    "license": "MIT",
+    "repository": "proofcarryingdata/zupass",
+    "commit": "f6be34c71d4629892b36c8af3465a50293bcfdcd"
+  },
+  "@pcd/proto-pod-gpc-artifacts@0.13.0": {
+    "name": "@pcd/proto-pod-gpc-artifacts",
+    "version": "0.13.0",
+    "tarball": "https://registry.npmjs.org/@pcd/proto-pod-gpc-artifacts/-/proto-pod-gpc-artifacts-0.13.0.tgz",
+    "integrity": "sha512-SFKV8gmFCyZ6WIOcJPXCdx4I1gNavIw+5u7TFU8L6/DqtUPWZ1/SubyAChb7aTetfwNgJTyid/VL9fEkJYSThA==",
+    "license": "GPL-3.0-or-later",
+    "repository": "proofcarryingdata/snark-artifacts",
+    "commit": "74aef19fa8bf40ae0231ab37732188e7c2032cf1"
+  },
+  "@pcd/util@0.9.0": {
+    "name": "@pcd/util",
+    "version": "0.9.0",
+    "tarball": "https://registry.npmjs.org/@pcd/util/-/util-0.9.0.tgz",
+    "integrity": "sha512-PI9XR9DY7Okn8AJyOfFPhSihewh5VVTyFf5Hm+qaH09t0MlV8ZbMAo9hbiyB5NtHJo7fEEM5BHTRCPpMeVEJcA==",
+    "license": "MIT",
+    "repository": "proofcarryingdata/zupass",
+    "commit": "f6be34c71d4629892b36c8af3465a50293bcfdcd"
+  },
+  "@semaphore-protocol/group@4.14.5": {
+    "name": "@semaphore-protocol/group",
+    "version": "4.14.5",
+    "tarball": "https://registry.npmjs.org/@semaphore-protocol/group/-/group-4.14.5.tgz",
+    "integrity": "sha512-x8WrlF6zXc6mYOKZkGoRiZ6ghfkcjJRaTxmf0v+rXyICyoRvRnuXLaCxdY61m3DnKR1eiuvRpExWAwsCX7J9Rw==",
+    "license": "MIT",
+    "repository": "semaphore-protocol/semaphore",
+    "commit": "dbab5553c486a09d5e1042e5271e3316224cc176"
+  },
+  "@semaphore-protocol/identity@4.14.5": {
+    "name": "@semaphore-protocol/identity",
+    "version": "4.14.5",
+    "tarball": "https://registry.npmjs.org/@semaphore-protocol/identity/-/identity-4.14.5.tgz",
+    "integrity": "sha512-WhHJ2rRdBXP27E8p+ooRmyuIEW3LA/PstHdrqm0tfaKofXFS5USE42zbRkseeY0I2kUEJSRFk4AcD3a1T0NVHw==",
+    "license": "MIT",
+    "repository": "semaphore-protocol/semaphore",
+    "commit": "dbab5553c486a09d5e1042e5271e3316224cc176"
+  },
+  "@semaphore-protocol/proof@4.14.5": {
+    "name": "@semaphore-protocol/proof",
+    "version": "4.14.5",
+    "tarball": "https://registry.npmjs.org/@semaphore-protocol/proof/-/proof-4.14.5.tgz",
+    "integrity": "sha512-orwvmeq4m1xFROTZpBHsfRteW0/c0RbVA3rLeN21IeX8XW/jLJDIgBWyZVsw/D/BR8t42NgFcOPmT07AqWay1A==",
+    "license": "MIT",
+    "repository": "semaphore-protocol/semaphore",
+    "commit": "dbab5553c486a09d5e1042e5271e3316224cc176"
+  },
+  "@semaphore-protocol/utils@4.14.5": {
+    "name": "@semaphore-protocol/utils",
+    "version": "4.14.5",
+    "tarball": "https://registry.npmjs.org/@semaphore-protocol/utils/-/utils-4.14.5.tgz",
+    "integrity": "sha512-f7KN6L0tX5/hfkaIIaBT6I5Mcc6jfm2Nr4A08HviniGMfRrtl+PY1j2SHd7ClgATKLj9ynPWxCQqsOfOW7//tg==",
+    "license": "MIT",
+    "repository": "semaphore-protocol/semaphore",
+    "commit": "dbab5553c486a09d5e1042e5271e3316224cc176"
+  },
+  "@zk-kit/artifacts@2.0.1": {
+    "name": "@zk-kit/artifacts",
+    "version": "2.0.1",
+    "tarball": "https://registry.npmjs.org/@zk-kit/artifacts/-/artifacts-2.0.1.tgz",
+    "integrity": "sha512-RvEOFkU5LAKqEre/o94pRcjYMyqHxs6TpLDE6wLLsfUWgcxabaWsZ7/UqLikR/ueQjspMDGuJYi3n9FlK/K9Kg==",
+    "license": "MIT",
+    "repository": "privacy-scaling-explorations/snark-artifacts",
+    "commit": "9d875d352161fa3081a64d35e3aebc6eb497cb51"
+  },
+  "@zk-kit/baby-jubjub@1.0.3": {
+    "name": "@zk-kit/baby-jubjub",
+    "version": "1.0.3",
+    "tarball": "https://registry.npmjs.org/@zk-kit/baby-jubjub/-/baby-jubjub-1.0.3.tgz",
+    "integrity": "sha512-Wl+QfV6XGOMk1yU2JTqHXeKWfJVXp83is0+dtqfj9wx4wsAPpb+qzYvwAxW5PBx5/Nu71Bh7jp/5vM+6QgHSwA==",
+    "license": "MIT",
+    "repository": "privacy-scaling-explorations/zk-kit",
+    "commit": "d865a5b1c581023974b6eacd2a21bb6a4c5bc70a"
+  },
+  "@zk-kit/eddsa-poseidon@1.0.4": {
+    "name": "@zk-kit/eddsa-poseidon",
+    "version": "1.0.4",
+    "tarball": "https://registry.npmjs.org/@zk-kit/eddsa-poseidon/-/eddsa-poseidon-1.0.4.tgz",
+    "integrity": "sha512-w0HrF5F+Kh+77+VK/p9qzB7wvitiZMAoWnqrmzPUM+MWlaNp0ipmtuO8KTLxnj8ACjt98GAK4voxl7XeWjC4XQ==",
+    "license": "MIT",
+    "repository": "privacy-scaling-explorations/zk-kit",
+    "commit": "c0b99e5fca6468c784634fa762bba1c25186562d"
+  },
+  "@zk-kit/eddsa-poseidon@1.1.0": {
+    "name": "@zk-kit/eddsa-poseidon",
+    "version": "1.1.0",
+    "tarball": "https://registry.npmjs.org/@zk-kit/eddsa-poseidon/-/eddsa-poseidon-1.1.0.tgz",
+    "integrity": "sha512-Djc+zOZjd73FpLLf32/XeVZi8GX4ShPQJGS4Iig1QMAR/2CggEi++6Jrkr9N2FM3M4MRCH1qxz2u22DjOLtASg==",
+    "license": "MIT",
+    "repository": "privacy-scaling-explorations/zk-kit",
+    "commit": "291501fcfbacdc410fe3d60859a55835ce151493"
+  },
+  "@zk-kit/lean-imt@2.2.5": {
+    "name": "@zk-kit/lean-imt",
+    "version": "2.2.5",
+    "tarball": "https://registry.npmjs.org/@zk-kit/lean-imt/-/lean-imt-2.2.5.tgz",
+    "integrity": "sha512-7pJIWiWp30wKz7OlbzV/+ATvHD+Emwy1aejU+9R4V+a1BkdY/yhGA/hFoVULxYyZ/RohiCfcJC/48cU2xI6Rtw==",
+    "license": "MIT",
+    "repository": "zk-kit/zk-kit",
+    "commit": "549590f76cd70e0a68fe82a5c48b9cdb1b92cd73"
+  },
+  "@zk-kit/utils@1.2.1": {
+    "name": "@zk-kit/utils",
+    "version": "1.2.1",
+    "tarball": "https://registry.npmjs.org/@zk-kit/utils/-/utils-1.2.1.tgz",
+    "integrity": "sha512-H2nTsyWdicVOyvqC5AjgU7tsTgmR6PDrruFJNmlmdhKp7RxEia/E1B1swMZjaasYa2QMp4Zc6oB7cWchty7B2Q==",
+    "license": "MIT",
+    "repository": "privacy-scaling-explorations/zk-kit",
+    "commit": "265702bf06fa6e3539460cbad4f73b027ffdd767"
+  },
+  "@zk-kit/utils@1.3.0": {
+    "name": "@zk-kit/utils",
+    "version": "1.3.0",
+    "tarball": "https://registry.npmjs.org/@zk-kit/utils/-/utils-1.3.0.tgz",
+    "integrity": "sha512-Gqsq5KLDf2WPuZSsNc2KZy25XeK5d5UV9hwLaPEM5wq+GD2qCi1ZBFzNs0OptiJ9GRGtP2J/xptrszWri+pRqQ==",
+    "license": "MIT",
+    "repository": "privacy-scaling-explorations/zk-kit",
+    "commit": "50105004ed81a4042cca30a4a6394dc2b67b20fb"
+  },
+  "@zk-kit/utils@1.4.1": {
+    "name": "@zk-kit/utils",
+    "version": "1.4.1",
+    "tarball": "https://registry.npmjs.org/@zk-kit/utils/-/utils-1.4.1.tgz",
+    "integrity": "sha512-IoXzy3ElfkvRfC/s6uk3eFQO8uxkCdAOVxKlJlaEjM7pgckX5AK46Q+7n5yMQD/v/o6OL0mMtet065o5EpUocA==",
+    "license": "MIT",
+    "repository": "privacy-scaling-explorations/zk-kit",
+    "commit": "60b50a0fd82dfd25dfb4f67fb72755e66e5adba6"
+  },
+  "abitype@1.2.3": {
+    "name": "abitype",
+    "version": "1.2.3",
+    "tarball": "https://registry.npmjs.org/abitype/-/abitype-1.2.3.tgz",
+    "integrity": "sha512-Ofer5QUnuUdTFsBRwARMoWKOH1ND5ehwYhJ3OJ/BQO+StkwQjHw0XyVh4vDttzHB7QOFhPHa/o413PJ82gU/Tg==",
+    "license": "MIT",
+    "repository": "wevm/abitype",
+    "commit": "238f094acefdde96002180f0b4c024880fbe318a"
+  },
+  "blakejs@1.2.1": {
+    "name": "blakejs",
+    "version": "1.2.1",
+    "tarball": "https://registry.npmjs.org/blakejs/-/blakejs-1.2.1.tgz",
+    "integrity": "sha512-QXUSXI3QVc/gJME0dBpXrag1kbzOqCjCX8/b54ntNyW6sjtoqxqRk3LTmXzaJoh71zMsDCjM+47jS7XiwN/+fQ==",
+    "license": "MIT",
+    "repository": "dcposch/blakejs",
+    "commit": "f47fffb1e7f1a2562cff572d065d500106119fdd"
+  },
+  "effect@4.1.4": {
+    "name": "effect",
+    "version": "4.1.4",
+    "tarball": "https://registry.npmjs.org/effect/-/effect-4.1.4.tgz",
+    "integrity": "sha512-Tgrv/9FN+TZYyOn8XSli+fVqAfwDrDAkiX5Uu9vztINb675VTQdhD0gWI5Kzvhlh9QqzjZvw72iugqw5pwoghQ==",
+    "license": "MIT",
+    "repository": "Effect-TS/effect",
+    "commit": "289a53f7b1fc40049219c6e69022db2fb859c356"
+  },
+  "email-validator@2.0.4": {
+    "name": "email-validator",
+    "version": "2.0.4",
+    "tarball": "https://registry.npmjs.org/email-validator/-/email-validator-2.0.4.tgz",
+    "integrity": "sha512-gYCwo7kh5S3IDyZPLZf6hSS0MnZT8QmJFqYvbqlDZSbwdZlY6QZWxJ4i/6UhITOJ4XzyI647Bm2MXKCLqnJ4nQ==",
+    "license": "Unlicense",
+    "repository": "manishsaraan/email-validator",
+    "commit": "01f8f712ea6b83b053132957c519cccfcdca6eac"
+  },
+  "js-sha256@0.10.1": {
+    "name": "js-sha256",
+    "version": "0.10.1",
+    "tarball": "https://registry.npmjs.org/js-sha256/-/js-sha256-0.10.1.tgz",
+    "integrity": "sha512-5obBtsz9301ULlsgggLg542s/jqtddfOpV5KJc4hajc9JV8GeY2gZHSVpYBn4nWqAUTJ9v+xwtbJ1mIBgIH5Vw==",
+    "license": "MIT",
+    "repository": "emn178/js-sha256",
+    "commit": "c31830ad549d50e3f23979e1fdbef159f7177886"
+  },
+  "lodash@4.18.1": {
+    "name": "lodash",
+    "version": "4.18.1",
+    "tarball": "https://registry.npmjs.org/lodash/-/lodash-4.18.1.tgz",
+    "integrity": "sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==",
+    "license": "MIT",
+    "repository": "lodash/lodash",
+    "commit": "4f0b76e2eca13de1c1fe8b4305abc1f7d63f4b86"
+  },
+  "ox@0.14.67": {
+    "name": "ox",
+    "version": "0.14.67",
+    "tarball": "https://registry.npmjs.org/ox/-/ox-0.14.67.tgz",
+    "integrity": "sha512-6v6UlwgsmiyTujZp0aVDuN8uIBAtl/QZadBADFRZ2zp1+CM9TqDzd+rPKJ5PYvWPlCvz8JvoO9dTr42+1PhBhA==",
+    "license": "MIT",
+    "repository": "wevm/ox",
+    "commit": "b4107be3d8f1982586d56a4a583efd9c4775db27"
+  },
+  "poseidon-lite@0.3.0": {
+    "name": "poseidon-lite",
+    "version": "0.3.0",
+    "tarball": "https://registry.npmjs.org/poseidon-lite/-/poseidon-lite-0.3.0.tgz",
+    "integrity": "sha512-ilJj4MIve4uBEG7SrtPqUUNkvpJ/pLVbndxa0WvebcQqeIhe+h72JR4g0EvwchUzm9sOQDlOjiDNmRAgxNZl4A==",
+    "license": "MIT",
+    "repository": "vimwitch/poseidon-lite",
+    "commit": "d66f7178bd68a89135ec2733522a1852cead20a3"
+  },
+  "url-join@4.0.1": {
+    "name": "url-join",
+    "version": "4.0.1",
+    "tarball": "https://registry.npmjs.org/url-join/-/url-join-4.0.1.tgz",
+    "integrity": "sha512-jk1+QP6ZJqyOiuEI9AEWQfju/nB2Pw466kbA0LEZljHwKeMgd9WrAEgEGxjPDD2+TNbbb37rTyhEfrCXfuKXnA==",
+    "license": "MIT",
+    "repository": "jfromaniello/url-join",
+    "commit": "71b89639f194f1fff03b23a334c73b61cae9d839"
+  },
+  "valibot@0.42.1": {
+    "name": "valibot",
+    "version": "0.42.1",
+    "tarball": "https://registry.npmjs.org/valibot/-/valibot-0.42.1.tgz",
+    "integrity": "sha512-3keXV29Ar5b//Hqi4MbSdV7lfVp6zuYLZuA9V1PvQUsXqogr+u5lvLPLk3A4f74VUXDnf/JfWMN6sB+koJ/FFw==",
+    "license": "MIT",
+    "repository": "fabian-hiller/valibot",
+    "commit": "96be15f3ea04e6aa3abfd11a69b62c2f782ee665"
+  },
+  "viem@2.58.0": {
+    "name": "viem",
+    "version": "2.58.0",
+    "tarball": "https://registry.npmjs.org/viem/-/viem-2.58.0.tgz",
+    "integrity": "sha512-oBGZGy6VptLmAATtEua71a7FzCXT5y74dQoeDP8EDHmBsWhQ34rXeHKz6tHeciKWnJ3zBT1u8sby8tAtg0gouA==",
+    "license": "MIT",
+    "repository": "wevm/viem",
+    "commit": "596dcc3a0d8b3b9ae0cf2b6d330df795aa69b4af"
+  }
+}

@@ -10,6 +10,8 @@ Install these applications into your own Cloudflare account with Appflare. In **
 
 - [Nathan identity provider](apps/nathan-idp/README.md) is an experimental identity provider. Its first owner verifies a provider identity and enrolls authenticators.
 - [Worker CRM](https://github.com/gmackie/worker-crm) stores people, companies, opportunities and tasks in D1 and serves the Twenty API routes used by Pulse.
+- [Llavero](https://github.com/gmackie/llavero-deploy/tree/v0.1.0) includes the compiled vault, recovery utility and D1 migrations. Prepare your recovery kit before filling in the secrets.
+- [Attest verifier](apps/attest-verifier/README.md) distributes its combined Worker under GPL-3.0-only. Each release includes the corresponding source. The original Attest verifier code is Apache-2.0.
 
 Each entry pins a source revision. Release builds run without the signing key, and a separate step signs the resulting artifact. An installation creates resources in the account the operator selects.
 

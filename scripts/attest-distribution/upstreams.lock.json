@@ -1,0 +1,69 @@
+[
+  {
+    "repository": "proofcarryingdata/zupass",
+    "commit": "f6be34c71d4629892b36c8af3465a50293bcfdcd",
+    "include": [
+      "packages/lib/gpc",
+      "packages/lib/gpcircuits",
+      "packages/lib/pcd-types",
+      "packages/lib/pod",
+      "packages/lib/semaphore-identity-v3-wrapper",
+      "packages/lib/util",
+      "packages/pcd/eddsa-pcd",
+      "packages/tools/tsconfig"
+    ],
+    "gitBlobs": "zupass-sources.json"
+  },
+  {
+    "repository": "fabian-hiller/valibot",
+    "commit": "96be15f3ea04e6aa3abfd11a69b62c2f782ee665",
+    "include": [
+      "library"
+    ],
+    "filesSha256": "21d3153d605568526df09bee9986eb62c242571b31ee3fe8d559d2f026a0dd5b"
+  },
+  {
+    "repository": "vimwitch/poseidon-lite",
+    "commit": "d66f7178bd68a89135ec2733522a1852cead20a3",
+    "include": [
+      "src",
+      "scripts"
+    ],
+    "filesSha256": "fe2734e4554252a13706596e3ef57d2cfe1d7c358023c75cf1680b6feaa72c91"
+  },
+  {
+    "repository": "cryptocoinjs/blake-hash",
+    "commit": "12c6f5eb6c5ac3cf5a76f1bb0f989ea53e8886ce",
+    "include": [
+      "lib",
+      "src"
+    ],
+    "filesSha256": "487342622811cf67ca09a6e32476b4f77062562b5b3d7990d5dc7104c086c51e"
+  },
+  {
+    "repository": "iden3/js-crypto",
+    "commit": "5efe996106e32ae551fc76ab112c8f03cc8c87df",
+    "include": [
+      "src/blake.ts"
+    ],
+    "filesSha256": "d70afcc3ed281a10edd50c584f11f597bc0ed4c05779047b0d57239a203b7431"
+  },
+  {
+    "repository": "MetaMask/eth-sig-util",
+    "commit": "9e0cdc2be912415e0cc9159b52d26db76ffe99b0",
+    "include": [
+      "src"
+    ],
+    "filesSha256": "053e067c3ea5b415f51901d5893383b8557790e910dbbbd77cce314d17b49c01"
+  },
+  {
+    "repository": "semaphore-protocol/semaphore",
+    "commit": "dbab5553c486a09d5e1042e5271e3316224cc176",
+    "include": [
+      "packages/circuits",
+      "packages/proof",
+      "scripts"
+    ],
+    "filesSha256": "eae6249097e18ef5b395453c67fe55a3f88d2de8f20f21da0a308c17e5aebeae"
+  }
+]

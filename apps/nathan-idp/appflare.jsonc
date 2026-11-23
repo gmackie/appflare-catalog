@@ -5,18 +5,14 @@
   "tagline": "Run an identity provider in your Cloudflare account",
   "repo": "gmackie/nathan",
   "license": "MIT",
-  "categories": [
-    "security"
-  ],
+  "categories": ["security"],
   "authors": [
     {
       "name": "gmackie",
       "github": "gmackie"
     }
   ],
-  "maintainers": [
-    "gmackie"
-  ],
+  "maintainers": ["gmackie"],
   "source": {
     "ref": "appflare-owner-promotion",
     "sha": "45220e2caccaa311fad5e4ea98d557c5311428b3"

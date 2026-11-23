@@ -1,0 +1,42 @@
+Attest verifier
+Copyright 2026 Graham Mackie.
+Original Attest code used in this verifier is licensed under Apache License 2.0.
+This combined Worker is distributed under GNU General Public License version 3.
+Each included component retains its own copyright and license. This distribution
+comes WITHOUT ANY WARRANTY, including merchantability and fitness for a particular
+purpose, to the extent permitted by applicable law. See the license texts below.
+On 2026-11-23 the gmackie Appflare catalog modified the upstream Worker
+entry to add this public source and license endpoint. Fetch GET /.well-known/attest-source on the installation
+for the exact release's corresponding source and third-party notices.
+
+Additional attributions
+viem's hashTypedData implementation is adapted from MetaMask eth-sig-util.
+Copyright (c) 2020 MetaMask. The upstream ISC license is reproduced below.
+ZK-Kit's Blake implementation credits cryptocoinjs/blake-hash, including
+contributor Kirill Fomichev (MIT). The referenced historical Iden3 js-crypto
+TypeScript adaptation is included with its GPL version 3 license.
+poseidon-lite by vimwitch declares MIT for versions >=0.2.0. Its upstream
+README and source accompany the distribution. The MIT grant is reproduced
+below with the package notices. Lodash includes the Underscore notices;
+Effect provides its own third-party notices. The archive contains the original
+package texts and the editable source used by the Worker.
+
+MIT terms for the credited blake-hash and poseidon-lite components
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

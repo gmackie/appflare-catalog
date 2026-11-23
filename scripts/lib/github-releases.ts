@@ -35,7 +35,9 @@ const RELEASE_JQ = "{tag_name, draft, prerelease, html_url, assets: [.assets[] |
 
 /** Release asset names for one app version. */
 export function releaseAssetNames(slug: string, version: string): string[] {
-  return [`${slug}-${version}.zip`, "manifest.json", "manifest.sig"];
+  const assets = [`${slug}-${version}.zip`, "manifest.json", "manifest.sig"];
+  if (slug === "attest-verifier") assets.push("attest-verifier-source.tar.gz");
+  return assets;
 }
 
 /** Splits `<slug>@<version>`. */

@@ -7,7 +7,15 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**", "!**/dist", "!**/site", "!schema/v1.json", "!index.json", "!apps/**/*.svg"]
+    "includes": [
+      "**",
+      "!scripts/attest-distribution",
+      "!**/dist",
+      "!**/site",
+      "!schema/v1.json",
+      "!index.json",
+      "!apps/**/*.svg"
+    ]
   },
   "formatter": {
     "enabled": true,

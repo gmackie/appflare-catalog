@@ -5,19 +5,14 @@
   "tagline": "Run a CRM in your Cloudflare account",
   "repo": "gmackie/worker-crm",
   "license": "MIT",
-  "categories": [
-    "business",
-    "productivity"
-  ],
+  "categories": ["business", "productivity"],
   "authors": [
     {
       "name": "gmackie",
       "github": "gmackie"
     }
   ],
-  "maintainers": [
-    "gmackie"
-  ],
+  "maintainers": ["gmackie"],
   "source": {
     "ref": "v0.1.0",
     "sha": "5ec847f161be64d72a62316a8f042568f3205f40"

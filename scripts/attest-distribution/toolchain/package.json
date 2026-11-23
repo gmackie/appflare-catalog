@@ -1,0 +1,7 @@
+{
+  "name": "attest-verifier-source-rebuild",
+  "private": true,
+  "dependencies": {
+    "wrangler": "4.136.2"
+  }
+}

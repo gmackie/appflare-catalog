@@ -1,0 +1,14 @@
+{
+  "circomlib@2.0.5": {
+    "tarball": "https://registry.npmjs.org/circomlib/-/circomlib-2.0.5.tgz",
+    "integrity": "sha512-O7NQ8OS+J4eshBuoy36z/TwQU0YHw8W3zxZcs4hVwpEll3e4hDm3mgkIPqItN8FDeLEKZFK3YeT/+k8TiLF3/A=="
+  },
+  "@zk-kit/binary-merkle-root.circom@1.0.0": {
+    "tarball": "https://registry.npmjs.org/@zk-kit/binary-merkle-root.circom/-/binary-merkle-root.circom-1.0.0.tgz",
+    "integrity": "sha512-yVyx9e+iNYuFvOtKt/f4i+QBhey78VM6K6svwqkgqdi55vnz3MRtXn8dqvnKibNAUEBmnjuwe4SDONgeOQpFEw=="
+  },
+  "@zk-kit/binary-merkle-root.circom@2.0.0": {
+    "tarball": "https://registry.npmjs.org/@zk-kit/binary-merkle-root.circom/-/binary-merkle-root.circom-2.0.0.tgz",
+    "integrity": "sha512-YaOmt1tq9mGwuQmk6ijlNbBRT71dxZciyuGOaNyL4eyosOeQbiM3u0WFDWbaHaKonpYupDn2Z5gUDHy0dtH0uQ=="
+  }
+}

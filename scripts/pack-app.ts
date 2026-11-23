@@ -116,7 +116,26 @@ runMain(async () => {
       packArgs.push("--key-id", values["key-id"]);
     }
     info(`packing ${slug}@${expectedVersion} with appflare-pack (no signing key present)`);
-    mustRun(process.execPath, packArgs);
+    if (slug === "attest-verifier") {
+      mustRun("python3", [
+        path.join(catalogRoot, "scripts/attest-distribution/release.py"),
+        "build",
+        "--checkout",
+        checkout,
+        "--manifest",
+        app.manifestPath,
+        "--packer",
+        packBin,
+        "--out",
+        outDir,
+        "--key-id",
+        values["key-id"] ?? "unsigned",
+        "--cache",
+        path.join(tmp, "source-cache"),
+      ]);
+    } else {
+      mustRun(process.execPath, packArgs);
+    }
     const verifyArgs = [packBin, "verify", outDir, "--hashes-only", "--check-upload"];
     if (run(process.execPath, verifyArgs) !== 0) {
       // Never leave an artifact that failed verification where build-index or

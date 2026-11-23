@@ -471,8 +471,14 @@ jobs:
             node "${pack}" verify "${dir}" --require-signed --check-upload "${trusted[@]}"
             tag="${slug}@${version}"
             local_sha="$(sha256sum "${dir}/manifest.json" | cut -d' ' -f1)"
+            assets=("${slug}-${version}.zip" manifest.json manifest.sig)
+            notes="Built from $(jq -r '.catalog.repo + "@" + .catalog.source.sha' "${dir}/manifest.json"). manifest.json sha256: ${local_sha}."
+            if [[ "${slug}" == "attest-verifier" ]]; then
+              assets+=(attest-verifier-source.tar.gz)
+              notes+=" Combined Worker: GPL-3.0-only. Original verifier code: Apache-2.0. Complete corresponding source, notices and rebuild instructions are in attest-verifier-source.tar.gz."
+            fi
             if state="$(gh release view "${tag}" --json isDraft,isPrerelease,assets --jq '[(.isDraft | tostring), (.isPrerelease | tostring), ([.assets[].name] | sort | join(","))] | join(" ")' 2> /dev/null)"; then
-              expected="$(printf '%s\n' "${slug}-${version}.zip" manifest.json manifest.sig | LC_ALL=C sort | paste -sd, -)"
+              expected="$(printf '%s\n' "${assets[@]}" | LC_ALL=C sort | paste -sd, -)"
               if [ "${state}" != "false false ${expected}" ]; then
                 echo "::error::release ${tag} exists but is a draft, a prerelease, or incomplete (${state}); fix or delete it by hand"
                 exit 1
@@ -487,13 +493,13 @@ jobs:
               echo "::error::release ${tag} exists with a different manifest.json (released sha256 ${remote_sha}, this run ${local_sha}); fix or delete it by hand"
               exit 1
             fi
-            # The pin is recorded in the catalog manifest packed into the artifact.
-            source="$(jq -r '.catalog.repo + "@" + .catalog.source.sha + " (" + .catalog.source.ref + ")"' "${dir}/manifest.json")"
+            files=()
+            for asset in "${assets[@]}"; do files+=("${dir}/${asset}"); done
             gh release create "${tag}" \
-              "${dir}/${slug}-${version}.zip" "${dir}/manifest.json" "${dir}/manifest.sig" \
+              "${files[@]}" \
               --target "${GITHUB_SHA}" \
               --title "${tag}" \
-              --notes "Built from ${source}. manifest.json sha256: ${local_sha}."
+              --notes "${notes}"
           done
       - name: Download the revision signatures
         if: needs.plan.outputs.revisions != '[]'

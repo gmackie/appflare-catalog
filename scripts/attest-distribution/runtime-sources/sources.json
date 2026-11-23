@@ -1,0 +1,22 @@
+{
+  "esbuild/LICENSE.md": {
+    "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681",
+    "url": "https://raw.githubusercontent.com/evanw/esbuild/bb9db84c02433fbe37b3509f53f9f3e3cc48725e/LICENSE.md"
+  },
+  "esbuild/internal/runtime/runtime.go": {
+    "sha256": "f198574bac5592f0b39a2165bd38651b185e5a5cbc75d864092e555d459b94d8",
+    "url": "https://raw.githubusercontent.com/evanw/esbuild/bb9db84c02433fbe37b3509f53f9f3e3cc48725e/internal/runtime/runtime.go"
+  },
+  "workers-sdk/LICENSE-APACHE": {
+    "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+    "url": "https://raw.githubusercontent.com/cloudflare/workers-sdk/51ad2b8db39e26d09204a7a6d39282b01cb9e98e/LICENSE-APACHE"
+  },
+  "workers-sdk/LICENSE-MIT": {
+    "sha256": "9bb3b077cc8628334bab25961223dd8207252c8a56aa054195be38f1c042aaf4",
+    "url": "https://raw.githubusercontent.com/cloudflare/workers-sdk/51ad2b8db39e26d09204a7a6d39282b01cb9e98e/LICENSE-MIT"
+  },
+  "workers-sdk/packages/wrangler/src/deployment-bundle/esbuild-plugins/hybrid-nodejs-compat.ts": {
+    "sha256": "6d7c954dce7839c0e9a2d6b31c9d2b49449d27204c92fe1914def334f0abbf48",
+    "url": "https://raw.githubusercontent.com/cloudflare/workers-sdk/51ad2b8db39e26d09204a7a6d39282b01cb9e98e/packages/wrangler/src/deployment-bundle/esbuild-plugins/hybrid-nodejs-compat.ts"
+  }
+}

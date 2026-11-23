@@ -1,0 +1,89 @@
+{
+  "slug": "attest-verifier",
+  "name": "Attest verifier",
+  "summary": "Verify signed presentations in your Cloudflare account.",
+  "tagline": "Verify signed presentations in your Cloudflare account",
+  "repo": "gmackie/attest",
+  "license": "GPL-3.0-only",
+  "categories": ["security"],
+  "authors": [
+    {
+      "name": "gmackie",
+      "github": "gmackie"
+    }
+  ],
+  "maintainers": ["gmackie"],
+  "source": {
+    "ref": "appflare-verifier-license",
+    "sha": "5de9ae73a2547dc11ba21bd79e8bf3b734670dc7",
+    "version": "0.0.0-20261123.5de9ae7"
+  },
+  "install": {
+    "packageManager": "pnpm",
+    "wranglerConfig": "apps/verifier/wrangler.jsonc",
+    "health": {
+      "path": "/health"
+    },
+    "configPatch": {
+      "vars": {
+        "VERIFIER_ID": null,
+        "TRUSTED_PEPS": null,
+        "IDENTITY_PROVIDERS": null,
+        "CORS_ORIGINS": null,
+        "CHAIN_FINALITY": null,
+        "SEPOLIA_RPC_URL": null,
+        "SEPOLIA_RPC_URL_SECONDARY": null
+      }
+    }
+  },
+  "plan": "paid",
+  "secrets": [
+    {
+      "name": "RESULT_SIGNING_KEYS",
+      "label": "Verifier ES256 key set (JSON)"
+    },
+    {
+      "name": "SEPOLIA_RPC_URL",
+      "label": "Primary Sepolia HTTPS RPC URL"
+    },
+    {
+      "name": "SEPOLIA_RPC_URL_SECONDARY",
+      "label": "Independent Sepolia HTTPS RPC URL"
+    }
+  ],
+  "vars": [
+    {
+      "name": "VERIFIER_ID",
+      "label": "Verifier URL",
+      "default": "{{appUrl}}"
+    },
+    {
+      "name": "TRUSTED_PEPS",
+      "label": "Trusted issuers and pinned public keys"
+    },
+    {
+      "name": "IDENTITY_PROVIDERS",
+      "label": "Trusted identity providers"
+    },
+    {
+      "name": "CORS_ORIGINS",
+      "label": "Allowed browser origins",
+      "default": "[]"
+    },
+    {
+      "name": "CHAIN_FINALITY",
+      "label": "Required chain finality",
+      "default": "finalized"
+    }
+  ],
+  "licenseNote": "Combined Worker under GPL-3.0-only. Original Attest verifier code under Apache-2.0. Corresponding source accompanies each release.",
+  "bump": {
+    "autoMerge": false
+  },
+  "postInstall": [
+    {
+      "type": "markdown",
+      "content": "Configure the verifier and test a presentation using the [operator guide](https://github.com/gmackie/appflare-catalog/tree/main/apps/attest-verifier). Each release includes its matching GPL corresponding source and notices."
+    }
+  ]
+}

@@ -73,6 +73,14 @@ describe("parseTag", () => {
 });
 
 describe("manifestAssetId", () => {
+  it("requires corresponding source on every Attest verifier release", () => {
+    const candidate = release("attest-verifier@0.1.0");
+    candidate.assets = candidate.assets.filter(
+      (asset) => asset.name !== "attest-verifier-source.tar.gz",
+    );
+    expect(() => manifestAssetId(candidate)).toThrow(/missing attest-verifier-source/);
+  });
+
   it("returns the manifest.json asset of a complete, published release", () => {
     expect(manifestAssetId(release("cut@0.1.0"))).toBe(2);
   });

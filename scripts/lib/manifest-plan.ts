@@ -132,6 +132,7 @@ export function checkArtifactDir(dir: string, planned: PlannedArtifact, signed: 
     return [`${dir}: missing`];
   }
   const expected = [`${planned.app}-${planned.version}.zip`, "manifest.json"];
+  if (planned.app === "attest-verifier") expected.push("attest-verifier-source.tar.gz");
   if (signed) {
     expected.push("manifest.sig");
   }

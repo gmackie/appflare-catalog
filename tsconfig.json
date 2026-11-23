@@ -22,5 +22,6 @@
     "noEmit": true,
     "types": ["node"]
   },
-  "include": ["scripts", "vitest.config.ts"]
+  "include": ["scripts", "vitest.config.ts"],
+  "exclude": ["scripts/attest-distribution/runtime-sources"]
 }
