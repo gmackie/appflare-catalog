@@ -1,0 +1,52 @@
+{
+  "slug": "worker-crm",
+  "name": "Worker CRM",
+  "summary": "A single-workspace CRM for people, companies, opportunities, activities and tasks, with D1 storage and a Twenty-compatible REST API.",
+  "tagline": "Run a CRM in your Cloudflare account",
+  "repo": "gmackie/worker-crm",
+  "license": "MIT",
+  "categories": [
+    "business",
+    "productivity"
+  ],
+  "authors": [
+    {
+      "name": "gmackie",
+      "github": "gmackie"
+    }
+  ],
+  "maintainers": [
+    "gmackie"
+  ],
+  "source": {
+    "ref": "v0.1.0",
+    "sha": "5ec847f161be64d72a62316a8f042568f3205f40"
+  },
+  "install": {
+    "packageManager": "npm",
+    "wranglerConfig": "wrangler.jsonc",
+    "health": {
+      "path": "/healthz"
+    }
+  },
+  "plan": "free",
+  "secrets": [
+    {
+      "name": "CRM_OWNER_PASSWORD",
+      "label": "Owner sign-in password",
+      "generate": "password"
+    },
+    {
+      "name": "CRM_API_TOKEN",
+      "label": "Integration API token",
+      "generate": "password"
+    }
+  ],
+  "$schema": "https://appflare.github.io/catalog/schema/v1.json",
+  "postInstall": [
+    {
+      "type": "markdown",
+      "content": "Open your CRM, sign in with the owner password, and store the separate integration token in your password manager. The [release guide](https://github.com/gmackie/worker-crm/tree/v0.1.0) covers supported client routes and migration from Twenty."
+    }
+  ]
+}
