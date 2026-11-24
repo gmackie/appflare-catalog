@@ -2,7 +2,6 @@
 # Do not edit by hand: run `pnpm gen-codeowners`.
 
 /apps/attest-verifier/ @gmackie
-/apps/dataflare/ @gmackie
 /apps/llavero/ @gmackie
 /apps/nathan-idp/ @gmackie
 /apps/worker-crm/ @gmackie

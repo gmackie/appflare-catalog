@@ -1,5 +1,5 @@
 import { spawnSync } from "node:child_process";
-import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, statSync } from "node:fs";
+import { mkdtempSync, readFileSync, rmSync, statSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { parseArgs } from "node:util";
@@ -116,15 +116,6 @@ runMain(async () => {
       packArgs.push("--key-id", values["key-id"]);
     }
     info(`packing ${slug}@${expectedVersion} with appflare-pack (no signing key present)`);
-    if (slug === "dataflare") {
-      // The upstream build removes license comments from the embedded SDK and dashboard.
-      const notices = path.join(checkout, "packages/worker/appflare-notices");
-      mkdirSync(notices);
-      copyFileSync(
-        path.join(catalogRoot, "scripts", "dataflare-NOTICES.txt"),
-        path.join(notices, "THIRD-PARTY-NOTICES.txt"),
-      );
-    }
     if (slug === "attest-verifier") {
       mustRun("python3", [
         path.join(catalogRoot, "scripts/attest-distribution/release.py"),
